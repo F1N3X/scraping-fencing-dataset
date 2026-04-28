@@ -75,3 +75,5 @@ def normalize_url(url):
     encoded_path = quote(parsed.path)
     encoded_query = urlencode(parse_qsl(parsed.query, keep_blank_values=True), doseq=True)
     return urlunparse((parsed.scheme, parsed.netloc, encoded_path, parsed.params, encoded_query, parsed.fragment))
+
+main()
